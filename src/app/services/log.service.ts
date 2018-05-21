@@ -18,7 +18,7 @@ export class LogService {
     ]
   }
   getLogs(): Observable<Log[]> {
-    return of (this.logs);
+    return of(this.logs);
   }
 
   setFormLog(log: Log) {
@@ -26,7 +26,7 @@ export class LogService {
   }
 
   addLog(log: Log) {
-    this.logs.unshift();
+    this.logs.unshift(log);
   }
 
   updateLog(log: Log) {
